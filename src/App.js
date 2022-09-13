@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Expenses from "./components/expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
-import Test from "./components/expenses/Test";
 
 const DUMMY_EXPENSES = [
   {
@@ -47,7 +46,6 @@ const App = () => {
         <NewExpense onAddExpense={addExpenseHandler} />
 
         <Expenses items={expense} />
-        {test && <Test props={DUMMY_EXPENSES} />}
       </div>
     </>
   );
